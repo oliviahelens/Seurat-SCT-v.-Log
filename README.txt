@@ -27,7 +27,7 @@ R/
   seurat_pbmc_log_workflow.R 
   seurat_pbmc_SCT_workflow.R 
 graphs/              		(selected output figures) 
-data/ 
+data/filtered_gene_bc_matrices/hg19/
 <project>.Rproj 
 README.txt
 
