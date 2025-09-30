@@ -1,4 +1,17 @@
-.Rproj.user
+# R / RStudio
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+
+# Ignore all data except the PBMC hg19 matrix
+data/**
+!data/filtered_gene_bc_matrices/
+!data/filtered_gene_bc_matrices/hg19/
+!data/filtered_gene_bc_matrices/hg19/**
