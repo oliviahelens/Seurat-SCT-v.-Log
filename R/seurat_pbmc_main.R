@@ -93,7 +93,7 @@ print(plot1 + plot2)
 pbmc <- subset(pbmc, subset = nFeature_RNA > 200 & nFeature_RNA < 2500 & percent.mt < 5)
 
 #_____________Choose workflow_____________
-mode <- "log"   # or "log"
+mode <- "SCT"   # "SCT" or "log"
 if (mode == "SCT") {
   source("seurat_pbmc_SCT_workflow.R")
 } else {
