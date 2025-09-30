@@ -29,7 +29,7 @@
 #   glmGamPoi: 1.18.0
 #   dplyr: 1.1.4
 #   ggplot2: 3.5.2
-#   sctransfrom: 0.4.2
+#   sctransform: 0.4.2
 #   patchwork: 1.3.2
 
 # Load libraries
