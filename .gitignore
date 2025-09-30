@@ -14,4 +14,4 @@
 data/**
 !data/filtered_gene_bc_matrices/
 !data/filtered_gene_bc_matrices/hg19/
-!data/filtered_gene_bc_matrices/hg19/**
+!data/filtered_gene_bc_matrices/hg19/**.DS_Store
