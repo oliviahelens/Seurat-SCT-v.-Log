@@ -48,7 +48,7 @@ pbmc.data <- Read10X(data.dir = "data/filtered_gene_bc_matrices/hg19")
 pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
 pbmc
 
-# Examine a three genes in the first thirty cells
+# Examine three genes in the first thirty cells
 pbmc.data[c("CD3D", "TCL1A", "MS4A1"), 1:30]
 
 # Dense versus Sparse sizing
