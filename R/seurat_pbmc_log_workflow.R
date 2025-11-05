@@ -2,7 +2,7 @@
 # Seurat PBMC log workflow 
 # ============================
 
-#_____________**Normalize data using Log transform**_____________
+#_____________Normalize data using Log transform_____________
 pbmc_log <- NormalizeData(pbmc, normalization.method = "LogNormalize", scale.factor = 10000)
 
 #_____________Feature selection on the log-normalized pipeline object_____________
