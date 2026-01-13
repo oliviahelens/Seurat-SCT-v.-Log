@@ -26,7 +26,7 @@ pbmc_sct_heatmap_selected_PCs <- DimHeatmap(pbmc_sct, dims = 1:9, cells = 500, b
 print(pbmc_sct_heatmap_selected_PCs)
 
 # Determine how many PCs to retain downstream using an elbow plot
-pbmc_sct_elbow_plot <-ElbowPlot(pbmc_sct, ndims = 50)
+pbmc_sct_elbow_plot <- ElbowPlot(pbmc_sct, ndims = 50)
 print(pbmc_sct_elbow_plot)
 
 #_____________Cluster the cells from the SCTransform pipeline object_____________
@@ -40,7 +40,7 @@ pbmc_sct <- FindClusters(pbmc_sct, resolution = 0.5)
 # Show cluster IDs of the first 5 cells
 head(Idents(pbmc_sct), 5)
 
-#_____________Run non-linear dimensional reduction (UMAP)using the SCT-normalized pipeline object(sorry Lior)_____________
+#_____________Run non-linear dimensional reduction (UMAP) using the SCT-normalized pipeline object (sorry Lior)_____________
 
 # Compute a 2D UMAP embedding using the first 10 PCs
 pbmc_sct <- RunUMAP(pbmc_sct, dims = 1:10)

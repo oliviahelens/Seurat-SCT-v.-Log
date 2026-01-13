@@ -19,7 +19,7 @@ Environment info:
  - patchwork: 1.3.2
 
 Minimal install:
-install.packages(c("Seurat","SeuratObject","glmGamPoi","dplyr","ggplot2","patchwork")
+install.packages(c("Seurat","SeuratObject","glmGamPoi","dplyr","ggplot2","patchwork"))
 
 Repository layout: 
 R/ 
