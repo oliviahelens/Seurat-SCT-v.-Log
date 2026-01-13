@@ -17,7 +17,7 @@ top10_log <- head(VariableFeatures(pbmc_log), 10)
 # Create a scatter plot of all genes showing mean expression vs. variance,
 plot1_log_variablefeature <- VariableFeaturePlot(pbmc_log)
 
-# A labels to highlight the top 10 variable genes
+# Add labels to highlight the top 10 variable genes
 plot2_log_variablefeature <- LabelPoints(plot = plot1_log_variablefeature, points = top10_log, repel = TRUE)
 
 # Display the labeled version
@@ -130,7 +130,7 @@ cluster0_log.markers <- FindMarkers(
 )
 
 # View the top results to see the highest AUC (classification power) markers
-head(cluster0.markers)
+head(cluster0_log.markers)
 
 # Visualizing marker expression via scaled/normalized expression values
 #   - MS4A1 / CD79A – B-cell markers (B-cell receptor components)
